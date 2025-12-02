@@ -1,0 +1,347 @@
+/* --- 1. CONFIGURAÇÃO E VARIÁVEIS --- */
+:root {
+    /* Paleta baseada no Mockup */
+    --bg-color: #0B1120;       /* Azul muito escuro (quase preto) */
+    --surface-color: #151e32;  /* Azul um pouco mais claro para cartões */
+    --primary-color: #F59E0B;  /* O Laranja do EI */
+    --text-main: #F3F4F6;      /* Branco sujo */
+    --text-muted: #9CA3AF;     /* Cinzento para textos secundários */
+    --accent-blue: #3B82F6;    /* Azul elétrico para detalhes */
+    
+    /* Espaçamentos e Layout */
+    --container-width: 1200px;
+    --header-height: 70px;
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+
+/* Wrapper Central */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- 2. HEADER & NAVEGAÇÃO --- */
+.main-header {
+    height: var(--header-height);
+    position: fixed; /* Fixo no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Efeito de vidro fosco (Glassmorphism) */
+    background: rgba(11, 17, 32, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.brand-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+}
+
+.highlight { color: var(--primary-color); }
+
+/* Menu Desktop */
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list a {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.nav-list a:hover, .nav-list a.active {
+    color: var(--text-main);
+}
+
+/* Dropdown (Requisito CSS) */
+.dropdown { position: relative; }
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--surface-color);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-muted);
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(255,255,255,0.05);
+    color: var(--primary-color); /* Requisito: mudar cor ao passar rato */
+}
+
+/* Barra Lateral (Search + Clock) */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 8px 35px 8px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.85rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: var(--primary-color);
+    background: rgba(255,255,255,0.1);
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.clock-badge {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    background: rgba(245, 158, 11, 0.1);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.github-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* --- 3. HERO SLIDER --- */
+.hero-slider {
+    height: 80vh; /* Ocupa quase todo o ecrã */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding-top: var(--header-height);
+}
+
+/* Fundo "Glow" atrás do logo */
+.bg-glow {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(11,17,32,0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+/* Ícone do cubo CSS puro (simplificado) */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), #d97706);
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+    transform: rotate(-10deg);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botões */
+.cta-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #000;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+}
+
+.btn-secondary {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Pontos do Slider */
+.slider-dots {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active { background: var(--primary-color); }
+
+/* --- 4. GRID DE ANOS (Estilo LEIC Modernizado) --- */
+.section-grid {
+    padding-bottom: 80px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+.years-grid {
+    display: grid;
+    /* Responsividade sem media queries complexas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Estilo Glassmorphism para os Cartões */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.year-num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(255,255,255,0.1);
+}
+
+.glass-card:hover .year-num {
+    color: var(--primary-color); /* Efeito visual ao passar rato */
+}
+
+.card h3 { font-size: 1.25rem; }
+
+.card-body p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-blue);
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}

@@ -1,1 +1,1 @@
-# Olá! Este é o repo do projeto de AI
+# Olá! Este é o repo do projeto de AI.

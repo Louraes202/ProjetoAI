@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumos LEI - ESTGV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="#" class="brand">
+                <span class="brand-text">Resumos <span class="highlight">LEI-ESTGV</span></span>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">Cadeiras ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">1º Ano</a></li>
+                            <li><a href="#">2º Ano</a></li>
+                            <li><a href="#">3º Ano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Comunidade</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar (Ctrl+K)...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="clock-badge">
+                    <span id="time-display">14:30</span>
+                </div>
+                <a href="#" class="github-link">GitHub ↗</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            
+            <div class="slide active">
+                <div class="hero-content">
+                    <div class="logo-large">
+                        <div class="icon-box">
+                            <div class="cube-icon"></div>
+                        </div>
+                        <h1>Resumos de <span class="highlight">EI</span></h1>
+                    </div>
+                    <p class="subtitle">A plataforma comunitária de EI na ESTGV. Feita por alunos, para alunos.</p>
+                    <div class="cta-group">
+                        <a href="#anos" class="btn btn-primary">Começar a Estudar</a>
+                        <a href="#" class="btn btn-secondary">Submeter Resumo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" style="display:none;"> 
+                <h1>Material Atualizado</h1>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section id="anos" class="container section-grid">
+            <h2 class="section-title">Navegar por Ano</h2>
+            
+            <div class="years-grid">
+                <article class="card glass-card">
+                    <div class="card-header">
+                        <span class="year-num">01</span>
+                        <h3>Primeiro Ano</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Matemática Discreta, Programação I, Álgebra...</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-link">Ver 8 Cadeiras →</a>
+                    </div>
+                </article>
+
+                <article class="card glass-card">
+                    <div class="card-header">
+                        <span class="year-num">02</span>
+                        <h3>Segundo Ano</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Base de Dados, SO, Programação Orientada a Objetos...</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-link">Ver 8 Cadeiras →</a>
+                    </div>
+                </article>
+
+                <article class="card glass-card">
+                    <div class="card-header">
+                        <span class="year-num">03</span>
+                        <h3>Terceiro Ano</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Inteligência Artificial, Aplicações Web, Redes...</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-link">Ver 8 Cadeiras →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Resumos LEI ESTGV | Projeto de AI</p>
+    </footer>
+
+</body>
+</html>

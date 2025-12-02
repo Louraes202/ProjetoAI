@@ -1,0 +1,37 @@
+• Quem é o público-alvo? Que características definem o público-alvo?  
+
+R: O público alvo são os estudantes da licenciatura de Engenharia Informática, da ESTGV.
+Uma característica determinante, que define esta audiência: São estudantes que precisam de material de estudo acessível e 
+são tech savy, tudo o que for digital será algo útil e bem aceite porque é a área dos mesmos.
+
+• O que é que o público-alvo procura no website? Que tarefas tem que realizar 
+no website? Quais as suas expectativas? 
+Procuram uma plataforma com resumos e material de estudo organizado, para auxiliar e orientar o seu desempenho académico.
+As suas expectativas podem ser resumidas a uma esperança de um site que centraliza toda a informação e ferramentas úteis para
+o dia a dia no curso.
+
+
+• Que objetivos quer o vosso grupo atingir ao implementar o website? São 
+objetivos quantitativos ou qualitativos? 
+Queremos ajudar o máximo de estudantes de EI que conseguirmos, mas não focando apenas na quantidade,
+queremos que os que acedem ao site, sejam 1 ou 100, tenham o seu objetivo alcançado: acesso fácil e organizado a material útil ao estudo.
+São objetivos quantitativos, queremos atingir o máximo de estudantes e alocar o máximo de recursos, mas também qualitativos, priorizamos a qualidade
+do material e o serviço prestado aos alunos em prol da quantidade destes dois.
+
+• Que atitude se pretende conferir ao website? 
+Um website moderno, acessível, fluído, que acolha os utilizadores e transmita a 'vibe' moderna, prática e tecnológica do nosso curso.
+
+• Que sensações se pretende incutir no utilizador? 
+Uma sensação de acolhimento, de sentir que está numa plataforma que o vai ajudar, onde pode encontrar tudo o que precisa.
+
+• Quais são as cores dominantes do website? 
+Uma paleta de cores que varia entre tons de preto e azul, predominantemente nas cores escuras, e com a cor laranja (do curso) para alguns elementos.
+
+• Que funcionalidades e conteúdos gostaria de ver implementadas no site? 
+- Repositório de resumos carregados pelos alunos
+- Repositório de material geral de orientação para a matéria
+- Zona de FAQ do curso
+
+• Como podemos medir o sucesso do website? Como sabemos se os objetivos 
+foram  atingidos?  É  possível  medir  objetivamente  (quantitativamente)  o 
+sucesso do website? Como?

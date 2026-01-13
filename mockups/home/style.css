@@ -103,6 +103,7 @@ ul { list-style: none; }
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
+    display:block;
 }
 
 .dropdown-menu li a {
@@ -288,6 +289,72 @@ ul { list-style: none; }
     gap: 25px;
 }
 
+/* --- 5. SLIDESHOW DE IMAGENS --- */
+
+.SlideShow {
+    width: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Foto {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+}
+
+
+.ligado {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.opcoes {
+    display: none;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.opcao {
+    width: 180px;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.opcao img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.opcao:hover {
+    transform: translateY(-5px);
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.opcao.ativa {
+    border-color:rgba(245, 158, 11, 0.2);
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+}
+
+#zonaEscolhas {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#zonaEscolhas.esconder {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
 /* Estilo Glassmorphism para os Cartões */
 .glass-card {
     background: rgba(255, 255, 255, 0.03);
@@ -344,4 +411,92 @@ ul { list-style: none; }
     border-top: 1px solid rgba(255,255,255,0.05);
     font-size: 0.9rem;
     color: var(--text-muted);
+}
+
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+
+.tablink {
+    flex: 1;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.tablink:hover {
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.tablink.active {
+    border-bottom: 3px solid #F59E0B;
+}
+
+.btn-Slideshow {
+    background: var(--primary-color);
+    color: #000;
+}
+
+.btn-Slideshow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+}
+
+form input,
+form textarea {
+    background: rgba(255,255,255,0.08);
+    border: none;
+    padding: 12px;
+    color: white;
+}
+
+#react-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#react-form input,
+#react-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-family: inherit;
+}
+
+#react-form button {
+    align-self: center;
+    margin-top: 10px;
+    flex: 1;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#react-form button:hover {
+    background: rgba(245, 158, 11, 0.1);
+}
+
+#react-form button.active {
+    border-bottom: 3px solid #F59E0B;
+}
+
+#react-form button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
 }

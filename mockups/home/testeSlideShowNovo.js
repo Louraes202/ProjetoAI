@@ -111,3 +111,13 @@ function abrirTab(evt, ano) {
     evt.currentTarget.className += " active";
   }
 }
+
+const items = document.querySelectorAll('.item');
+
+items.forEach(item => {
+    const header = item.querySelector('.header');
+
+    header.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});

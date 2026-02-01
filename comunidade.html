@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Comunidade Resumos LEI-ESTGV - Testemunhos, dicas e mural motivacional para estudantes de Engenharia Informática">
+    <title>Comunidade | Resumos LEI-ESTGV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-glow"></div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="brand">
+                <span class="brand-text">Resumos <span class="highlight">LEI-ESTGV</span></span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">Cadeiras ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/cadeiras-1ano.html">1º Ano</a></li>
+                            <li><a href="pages/cadeiras-2ano.html">2º Ano</a></li>
+                            <li><a href="pages/cadeiras-3ano.html">3º Ano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comunidade.html" class="active">Comunidade</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li class="mobile-only"><button class="theme-toggle"
+                            style="width: 100%; text-align: left; background: transparent; border: none; font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">Alterar
+                            Tema</button></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar..." id="search-input">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="clock-badge">
+                    <span id="time-display">--:--:--</span>
+                </div>
+                <button class="theme-toggle" title="Alternar tema">Tema</button>
+            </div>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Comunidade <span class="highlight">LEI</span></h1>
+        <p class="subtitle" style="padding-top: 0; margin-bottom: 40px;">
+            Bem-vindo à comunidade de estudantes de Engenharia Informática da ESTGV!
+            Aqui partilhamos experiências, dicas e motivação para o sucesso académico.
+        </p>
+
+        <!-- Secção de Testemunhos -->
+        <section class="community-section">
+            <h2>Testemunhos de Colegas</h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="quote">"Os resumos desta plataforma salvaram-me nos exames de POO. Material organizado e
+                        direto ao ponto!"</p>
+                    <p class="author">Ana Silva</p>
+                    <p class="year">2º Ano LEI, 2025</p>
+                    <button class="like-btn" data-id="test1">
+                        Like 👍 <span class="like-count">0</span>
+                    </button>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Finalmente um sítio onde encontro tudo num só lugar. Já não perco horas à procura
+                        de apontamentos."</p>
+                    <p class="author">João Ferreira</p>
+                    <p class="year">3º Ano LEI, 2025</p>
+                    <button class="like-btn" data-id="test2">
+                        Like 👍 <span class="like-count">0</span>
+                    </button>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"A secção de Bases de Dados é excelente! Os exemplos práticos ajudaram-me muito a
+                        perceber SQL."</p>
+                    <p class="author">Maria Santos</p>
+                    <p class="year">2º Ano LEI, 2025</p>
+                    <button class="like-btn" data-id="test3">
+                        Like 👍 <span class="like-count">0</span>
+                    </button>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Contribuí com os meus resumos e vi outros colegas a agradecer. É bom sentir que
+                        estamos todos juntos nisto!"</p>
+                    <p class="author">Pedro Costa</p>
+                    <p class="year">3º Ano LEI, 2025</p>
+                    <button class="like-btn" data-id="test4">
+                        Like 👍 <span class="like-count">0</span>
+                    </button>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"No 1º ano estava perdida, não sabia como estudar para Algoritmos. Encontrei aqui
+                        exercícios resolvidos que me desbloquearam!"</p>
+                    <p class="author">Sofia Oliveira</p>
+                    <p class="year">1º Ano LEI, 2025</p>
+                    <button class="like-btn" data-id="test5">
+                        Like 👍 <span class="like-count">0</span>
+                    </button>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"A comunidade responde sempre a dúvidas. Mesmo às 2 da manhã antes de um exame,
+                        havia alguém online a ajudar!"</p>
+                    <p class="author">Miguel Rodrigues</p>
+                    <p class="year">2º Ano LEI, 2025</p>
+                    <button class="like-btn" data-id="test6">
+                        Like 👍 <span class="like-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção de Dicas -->
+        <section class="community-section">
+            <h2>Dicas para o Sucesso</h2>
+
+            <div class="tips-list">
+                <div class="tip-item">
+                    <span class="number">01</span>
+                    <div>
+                        <strong>Começa a estudar cedo</strong>
+                        <p>Não deixes tudo para a véspera! Dividir a matéria em partes pequenas e estudar um pouco todos
+                            os dias é muito mais eficaz do que maratonas de última hora.</p>
+                    </div>
+                </div>
+
+                <div class="tip-item">
+                    <span class="number">02</span>
+                    <div>
+                        <strong>Pratica com exercícios</strong>
+                        <p>Especialmente em cadeiras de programação e matemática, a teoria não chega. Resolve todos os
+                            exercícios disponíveis e inventa os teus próprios problemas.</p>
+                    </div>
+                </div>
+
+                <div class="tip-item">
+                    <span class="number">03</span>
+                    <div>
+                        <strong>Forma grupos de estudo</strong>
+                        <p>Estudar com colegas ajuda a manter a motivação e permite tirar dúvidas em tempo real. Ensinar
+                            aos outros é uma das melhores formas de consolidar conhecimento.</p>
+                    </div>
+                </div>
+
+                <div class="tip-item">
+                    <span class="number">04</span>
+                    <div>
+                        <strong>Usa recursos online</strong>
+                        <p>Para além desta plataforma, explora YouTube, Stack Overflow, documentação oficial e
+                            tutoriais. A internet é uma mina de ouro para programadores.</p>
+                    </div>
+                </div>
+
+                <div class="tip-item">
+                    <span class="number">05</span>
+                    <div>
+                        <strong>Cuida de ti</strong>
+                        <p>Dorme bem, alimenta-te corretamente e faz pausas regulares. O cérebro precisa de descanso
+                            para processar informação. Um passeio de 15 minutos pode fazer maravilhas!</p>
+                    </div>
+                </div>
+
+                <div class="tip-item">
+                    <span class="number">06</span>
+                    <div>
+                        <strong>Faz projetos pessoais</strong>
+                        <p>Aplicar o que aprendes em projetos próprios solidifica o conhecimento e dá-te algo para
+                            mostrar no CV. Começa pequeno e vai aumentando a complexidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mural Motivacional -->
+        <section class="community-section">
+            <h2>Mural Motivacional</h2>
+
+            <div class="mural-box">
+                <p class="mural-quote">"Carrega no botão para uma dose de motivação!"</p>
+                <button class="mural-btn">Nova Frase</button>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="community-section" style="text-align: center; padding: 40px 0;">
+            <h2 style="border: none; text-align: center; padding-left: 0;">Queres contribuir?</h2>
+            <p
+                style="color: var(--text-muted); margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Tens resumos, exercícios resolvidos ou dicas úteis? Partilha com a comunidade e ajuda outros estudantes!
+            </p>
+            <a href="contactos.html" class="btn btn-primary">Enviar Contribuição</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Resumos LEI ESTGV | Projeto de Aplicações para a Internet I</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Feito com dedicação por alunos para alunos</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/comunidade.js"></script>
+</body>
+
+</html>

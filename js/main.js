@@ -232,13 +232,36 @@
      * Alterna entre modo claro e escuro
      */
     function toggleTema() {
-        const body = document.body;
-        const isLightMode = body.classList.toggle('light-mode');
-        
-        // Guardar preferencia em localStorage
+         const body = document.body;
+         const glassCards = document.querySelectorAll('.glass-card');
+         const yearNum = document.querySelectorAll('.year-num');
+         const glow = document.querySelectorAll('.bg-glow');
+         const dots = document.querySelectorAll('.dot');
+
+    // alternar tema no body
+          const isLightMode = body.classList.toggle('light-mode');
+
+    // alternar tema em todos os glass cards, yearNums e o glow
+        glassCards.forEach(card => {
+            card.classList.toggle('light-mode', isLightMode);
+        });
+
+        yearNum.forEach(card => {
+            card.classList.toggle('light-mode', isLightMode);
+        });
+
+        glow.forEach(card => {
+            card.classList.toggle('light-mode', isLightMode);
+        }); 
+
+        dots.forEach(card => {
+            card.classList.toggle('light-mode', isLightMode);
+        }); 
+
+    // guardar preferência
         localStorage.setItem('tema', isLightMode ? 'light' : 'dark');
-        
-        // Atualizar texto do botao
+
+    // atualizar texto dos botões
         const themeBtns = document.querySelectorAll('.theme-toggle');
         themeBtns.forEach(btn => {
             btn.textContent = isLightMode ? 'Escuro' : 'Claro';

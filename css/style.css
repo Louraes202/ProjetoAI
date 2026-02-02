@@ -322,6 +322,10 @@ ul { list-style: none; }
     pointer-events: none;
 }
 
+.bg-glow.light-mode {
+    background: radial-gradient(circle, rgba(246, 181, 59, 0.15) 0%, rgba(11,17,32,0) 70%);
+}
+
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 800;
@@ -498,6 +502,10 @@ ul { list-style: none; }
     transition: 0.3s;
 }
 
+.dot.light-mode{
+    background: rgba(43, 42, 40, 0.2);
+}
+
 .dot.active { background: var(--primary-color); }
 .dot:hover { background: rgba(245, 158, 11, 0.5); }
 
@@ -627,9 +635,21 @@ ul { list-style: none; }
     overflow: hidden;
 }
 
+.glass-card.light-mode {
+    background: #f59f0b2c;
+    border: 1px solid #F59E0B;
+}
+
 .glass-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.glass-card:hover.light-mode {
+    transform: translateY(-5px);
+    background: #f59f0b1a;
     border-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
@@ -645,6 +665,10 @@ ul { list-style: none; }
     font-size: 2rem;
     font-weight: 800;
     color: rgba(255,255,255,0.1);
+}
+
+.year-num.light-mode {
+    color: #f59f0b6e;
 }
 
 .glass-card:hover .year-num {

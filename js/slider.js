@@ -158,6 +158,8 @@
                     justify-content: center;
                     font-size: 3rem;
                     color: var(--text-main);
+                    font-family: Verdana, sans-serif;
+                    font-size: 4rem;
                 `;
                 placeholder.textContent = item.sigla || '📚';
                 link.appendChild(placeholder);

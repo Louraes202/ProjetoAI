@@ -363,8 +363,7 @@ ul { list-style: none; }
     font-size: 1.2rem;
     color: var(--text-muted);
     margin-bottom: 2.5rem;
-    max-width: 600px;
-    margin-left: auto;
+    margin-left: 0px;
     margin-right: auto;
 }
 
@@ -544,16 +543,19 @@ ul { list-style: none; }
 
 .Foto {
     position: absolute;
+    inset: 0;
     width: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     pointer-events: none;
+    z-index: 1;
 }
 
 .ligado {
     pointer-events: auto;
     opacity: 1;
     position: relative;
+    z-index: 2;
 }
 
 .opcoes {

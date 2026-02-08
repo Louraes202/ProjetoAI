@@ -150,8 +150,8 @@
                 const placeholder = document.createElement('div');
                 placeholder.style.cssText = `
                     width: 100%;
-                    height: 200px;
-                    background: linear-gradient(135deg, var(--surface-color), var(--primary-color));
+                    height: 400px;
+                    background: var(--primary-color);
                     border-radius: 12px;
                     display: flex;
                     align-items: center;
@@ -176,20 +176,23 @@
     /**
      * Troca para o próximo slide do slideshow de cadeiras
      */
-    function trocarSlide() {
-        const slides = document.getElementsByClassName('Foto');
-        if (slides.length === 0) return;
+function trocarSlide() {
+    const slides = document.getElementsByClassName('Foto');
+    if (slides.length === 0) return;
 
-        let atual = slides[slideIndex];
+    const atual = slides[slideIndex];
 
-        slideIndex++;
-        if (slideIndex >= slides.length) slideIndex = 0;
+    slideIndex++;
+    if (slideIndex >= slides.length) slideIndex = 0;
 
-        let seguinte = slides[slideIndex];
+    const seguinte = slides[slideIndex];
 
-        atual.classList.remove('ligado');
-        seguinte.classList.add('ligado');
-    }
+    // ativa o próximo primeiro
+    seguinte.classList.add('ligado');
+
+    // remove do atual (fade out automático)
+    atual.classList.remove('ligado');
+}
 
     /**
      * Inicializa os event listeners das opções de cadeiras

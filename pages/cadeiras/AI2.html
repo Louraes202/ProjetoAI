@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicações para a Internet II | Resumos LEI-ESTGV</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+        <header class="main-header">
+        <div class="container header-content">
+            <a href="../../index.html" class="brand">
+                <span class="brand-text">Resumos <span class="highlight">LEI-ESTGV</span></span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Cadeiras ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../cadeiras-1ano.html">1º Ano</a></li>
+                            <li><a href="../cadeiras-2ano.html">2º Ano</a></li>
+                            <li><a href="../cadeiras-3ano.html">3º Ano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../comunidade.html">Comunidade</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                    <li><a href="../../contactos.html">Contactos</a></li>
+                    <li class="mobile-only"><button class="theme-toggle" style="width: 100%; text-align: left; background: transparent; border: none; font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">Alterar Tema</button></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar..." id="search-input">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="clock-badge">
+                    <span id="time-display">--:--:--</span>
+                </div>
+                <button class="theme-toggle" title="Alternar tema">Tema</button>
+            </div>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+    <main class="container cadeira-detail">
+        <nav class="breadcrumb"><a href="../../index.html">Início</a> / <a href="../cadeiras-2ano.html">2º Ano</a> /
+            <span>Aplicações para a Internet II</span></nav>
+        <header class="cadeira-header">
+            <div class="sigla-grande" style="background: linear-gradient(135deg, #F59E0B, #D97706);">AI2</div>
+            <div>
+                <h1>Aplicações para a Internet II</h1>
+                <p class="meta">2º Ano | 2º Semestre | 6 ECTS</p>
+            </div>
+        </header>
+        <section class="cadeira-section glass-card">
+            <h2> Resumo</h2>
+            <p>Continuação de AI1, esta cadeira foca no desenvolvimento web server-side. Aprenderás Node.js, Express,
+                APIs REST e integração com bases de dados para criar aplicações web completas.</p>
+        </section>
+        <section class="cadeira-section glass-card">
+            <h2> Objetivos de Aprendizagem</h2>
+            <ul class="objetivos-list">
+                <li>Desenvolver backends com Node.js</li>
+                <li>Criar APIs RESTful</li>
+                <li>Integrar com bases de dados</li>
+                <li>Implementar autenticação</li>
+                <li>Deploy de aplicações web</li>
+            </ul>
+        </section>
+        <section class="cadeira-section glass-card">
+            <h2> Conteúdos Programáticos</h2>
+            <div class="topicos-accordion accordion">
+                <div class="item">
+                    <div class="header"><span>1. Node.js</span><span class="arrow">▼</span></div>
+                    <div class="content">
+                        <ul>
+                            <li>Event loop</li>
+                            <li>Módulos e npm</li>
+                            <li>Async/await</li>
+                            <li>File system</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="header"><span>2. Express.js</span><span class="arrow">▼</span></div>
+                    <div class="content">
+                        <ul>
+                            <li>Routing</li>
+                            <li>Middleware</li>
+                            <li>Templates (EJS)</li>
+                            <li>Tratamento de erros</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="header"><span>3. APIs REST</span><span class="arrow">▼</span></div>
+                    <div class="content">
+                        <ul>
+                            <li>Métodos HTTP</li>
+                            <li>Design de endpoints</li>
+                            <li>JSON</li>
+                            <li>Validação</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="header"><span>4. Bases de Dados</span><span class="arrow">▼</span></div>
+                    <div class="content">
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>CRUD operations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cadeira-nav"
+            style="display: flex; justify-content: space-between; margin: 40px 0; flex-wrap: wrap; gap: 15px;">
+            <a href="BD1.html" class="btn btn-secondary">← Anterior: Bases de Dados I</a>
+            <a href="PDM.html" class="btn btn-primary">Proxima: PDM →</a>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2025 Resumos LEI ESTGV</p>
+    </footer>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

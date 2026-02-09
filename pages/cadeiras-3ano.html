@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cadeiras do 3º Ano de Engenharia Informática LEI-ESTGV - Resumos e material de estudo">
+    <title>3º Ano | Resumos LEI-ESTGV</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-glow"></div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="../index.html" class="brand">
+                <span class="brand-text">Resumos <span class="highlight">LEI-ESTGV</span></span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Cadeiras ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cadeiras-1ano.html">1º Ano</a></li>
+                            <li><a href="cadeiras-2ano.html">2º Ano</a></li>
+                            <li><a href="cadeiras-3ano.html" class="active">3º Ano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../comunidade.html">Comunidade</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contactos.html">Contactos</a></li>
+                    <li class="mobile-only"><button class="theme-toggle"
+                            style="width: 100%; text-align: left; background: transparent; border: none; font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">Alterar
+                            Tema</button></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar..." id="search-input">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="clock-badge">
+                    <span id="time-display">--:--:--</span>
+                </div>
+                <button class="theme-toggle" title="Alternar tema">Tema</button>
+            </div>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Cadeiras do <span class="highlight">3º Ano</span></h1>
+        <p class="subtitle" style="padding-top: 0; margin-bottom: 40px;">
+            O terceiro ano foca em áreas avançadas como inteligência artificial, segurança e sistemas distribuídos.
+        </p>
+
+        <!-- 1º Semestre -->
+        <section class="community-section">
+            <h2>1º Semestre</h2>
+
+            <div class="years-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #EF4444, #B91C1C);">SI</div>
+                    <h3>Segurança Informática</h3>
+                    <p>Criptografia, vulnerabilidades, autenticação, políticas de segurança.</p>
+                    <a href="cadeiras/SI.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #F59E0B, #D97706);">R2</div>
+                    <h3>Redes de Comunicação II</h3>
+                    <p>Encaminhamento, comutação, redes locais virtuais (VLANs).</p>
+                    <a href="cadeiras/R2.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #10B981, #059669);">CSO</div>
+                    <h3>Compl. de Sist. Operativos</h3>
+                    <p>Virtualização, sistemas em tempo real, administração de sistemas.</p>
+                    <a href="cadeiras/CSO.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #8B5CF6, #6D28D9);">BD2</div>
+                    <h3>Bases de Dados II</h3>
+                    <p>Bases de dados NoSQL, otimização, transações, data warehousing.</p>
+                    <a href="cadeiras/BD2.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8);">SE</div>
+                    <h3>Sistemas Embebidos</h3>
+                    <p>Microcontroladores, sensores, atuadores, programação de baixo nível.</p>
+                    <a href="cadeiras/SE.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #EC4899, #BE185D);">SDi</div>
+                    <h3>Sistemas Distribuídos</h3>
+                    <p>Comunicação entre processos, middleware, tolerância a falhas.</p>
+                    <a href="cadeiras/SDi.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 2º Semestre -->
+        <section class="community-section">
+            <h2>2º Semestre</h2>
+
+            <div class="years-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #F59E0B, #D97706);">IA</div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Agentes, pesquisa, aprendizagem automática, redes neuronais básicas.</p>
+                    <a href="cadeiras/IA.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #3B82F6, #1D4ED8);">ES2</div>
+                    <h3>Engenharia de Software II</h3>
+                    <p>Testes de software, qualidade, DevOps, integração contínua.</p>
+                    <a href="cadeiras/ES2.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #F59E0B, #D97706);">R3</div>
+                    <h3>Redes de Comunicação III</h3>
+                    <p>Redes alargadas, tecnologias WAN, segurança de redes.</p>
+                    <a href="cadeiras/R3.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #10B981, #059669);">EGE</div>
+                    <h3>Empreendedorismo e Gestão</h3>
+                    <p>Plano de negócios, marketing, gestão financeira e inovação.</p>
+                    <a href="cadeiras/EGE.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+                <article class="card glass-card cadeira-card">
+                    <div class="sigla" style="background: linear-gradient(135deg, #EC4899, #BE185D);">Proj</div>
+                    <h3>Projeto</h3>
+                    <p>Desenvolvimento de projeto final de curso, integrando competências.</p>
+                    <a href="cadeiras/Proj.html" class="card-link">Ver Cadeira →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Navegação para outros anos -->
+        <section class="community-section" style="text-align: center; padding: 40px 0;">
+            <h2 style="border: none; text-align: center; padding-left: 0;">Outros Anos</h2>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+                <a href="cadeiras-1ano.html" class="btn btn-secondary">Ver 1º Ano</a>
+                <a href="cadeiras-2ano.html" class="btn btn-secondary">Ver 2º Ano</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Resumos LEI ESTGV | Projeto de Aplicações para a Internet I</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Feito com ❤️ por alunos para alunos</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -19,16 +19,16 @@
 
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="index.html" class="active">Início</a></li>
                     <li class="dropdown">
                         <a href="#">Cadeiras ▾</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">1º Ano</a></li>
-                            <li><a href="#">2º Ano</a></li>
-                            <li><a href="#">3º Ano</a></li>
+                            <li><a href="Cadeiras1Ano.html">1º Ano</a></li>
+                            <li><a href="Cadeiras2Ano.html">2º Ano</a></li>
+                            <li><a href="Cadeiras3Ano.html">3º Ano</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Comunidade</a></li>
+                    <li><a href="Formulario.html">Comunidade</a></li>
                 </ul>
             </nav>
 
@@ -75,6 +75,187 @@
             </div>
         </section>
 
+        <section id="slideshow" class="container section-grid">
+            <h2 class="section-title">As tuas cadeiras</h2>
+            
+            <div class="years-grid">
+                <article class="card glass-card">
+
+                    <div id="zonaEscolhas">
+                        <p>Escolhe 3 cadeiras:</p>
+
+                        <div class="tabs">
+                            <button class="tablink" onclick="abrirTab(event, '1anoOpcoes')">1º Ano</button>
+                            <button class="tablink" onclick="abrirTab(event, '2anoOpcoes')">2º Ano</button>
+                            <button class="tablink" onclick="abrirTab(event, '3anoOpcoes')">3º Ano</button>
+                        </div>
+
+                                <div id="1anoOpcoes" class="opcoes">
+
+                                    <div class="opcao" data-img="Cadeiras/AM.png" data-href="HTMLdeCadeiras/AM.html">
+                                        <img src="Cadeiras/AM.png">
+                                        <p>Análise Matemática</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/AL.png" data-href="HTMLdeCadeiras/AL.html">
+                                        <img src="Cadeiras/AL.png">
+                                        <p>Álgebra</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/SD.png" data-href="HTMLdeCadeiras/SD.html">
+                                        <img src="Cadeiras/SD.png">
+                                        <p>Sistemas Digitais</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/AP.png" data-href="HTMLdeCadeiras/AP.html">
+                                        <img src="Cadeiras/AP.png">
+                                        <p>Algoritmos e Programação</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/TC.png" data-href="HTMLdeCadeiras/TC.html">
+                                        <img src="Cadeiras/TC.png">
+                                        <p>Tecnologia dos Computadores</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/MA.png" data-href="HTMLdeCadeiras/MA.html">
+                                        <img src="Cadeiras/MA.png">
+                                        <p>Matemática Aplicada</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/MD.png" data-href="HTMLdeCadeiras/MD.html">
+                                        <img src="Cadeiras/MD.png">
+                                        <p>Matemática Discreta</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/AC.png" data-href="HTMLdeCadeiras/AC.html">
+                                        <img src="Cadeiras/AC.png">
+                                        <p>Arquiteturas de Computador</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/ED.png" data-href="HTMLdeCadeiras/ED.html">
+                                        <img src="Cadeiras/ED.png">
+                                        <p>Estruturas de Dados</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/R1.png" data-href="HTMLdeCadeiras/R1.html">
+                                        <img src="Cadeiras/R1.png">
+                                        <p>Redes de Comunicação I</p>
+                                    </div>
+                                </div>
+
+                                <div id="2anoOpcoes" class="opcoes">
+
+                                    <div class="opcao" data-img="Cadeiras/AS.png" data-href="HTMLdeCadeiras/AS.html">
+                                        <img src="Cadeiras/AS.png">
+                                        <p>Análise de Sistemas</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/AI1.png" data-href="HTMLdeCadeiras/AI1.html">
+                                        <img src="Cadeiras/AI1.png">
+                                        <p>Aplicações para a Internet I</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/POO.png" data-href="HTMLdeCadeiras/POO.html">
+                                        <img src="Cadeiras/POO.png">
+                                        <p>Programação Orientada aos Objetos</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/SO.png" data-href="HTMLdeCadeiras/SO.html">
+                                        <img src="Cadeiras/SO.png">
+                                        <p>Sistemas Operativos</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/U.png" data-href="HTMLdeCadeiras/U.html">
+                                        <img src="Cadeiras/U.png">
+                                        <p>Usabilidade</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/AI2.png" data-href="HTMLdeCadeiras/AI2.html">
+                                        <img src="Cadeiras/AI2.png">
+                                        <p>Aplicações para a Internet II</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/BD1.png" data-href="HTMLdeCadeiras/BD1.html">
+                                        <img src="Cadeiras/BD1.png">
+                                        <p>Bases de Dados I</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/ES1.png" data-href="HTMLdeCadeiras/ES1.html">
+                                        <img src="Cadeiras/ES1.png">
+                                        <p>Engenharia de Software I</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/PDM.png" data-href="HTMLdeCadeiras/PDM.html">
+                                        <img src="Cadeiras/PDM.png">
+                                        <p>Programação para Dispositivos Móveis</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/R2.png" data-href="HTMLdeCadeiras/R2.html">
+                                        <img src="Cadeiras/R2.png">
+                                        <p>Redes de Comunicação II</p>
+                                    </div>
+                                </div>
+
+                                <div id="3anoOpcoes" class="opcoes">
+
+                                    <div class="opcao" data-img="Cadeiras/BD2.png" data-href="HTMLdeCadeiras/BD2.html">
+                                        <img src="Cadeiras/BD2.png">
+                                        <p>Bases de Dados II</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/CSO.png" data-href="HTMLdeCadeiras/CSO.html">
+                                        <img src="Cadeiras/CSO.png">
+                                        <p>Complementos de Sistemas Operativos</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/R3.png" data-href="HTMLdeCadeiras/R3.html">
+                                        <img src="Cadeiras/R3.png">
+                                        <p>Redes de Comunicação III</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/SI.png" data-href="HTMLdeCadeiras/SI.html">
+                                        <img src="Cadeiras/SI.png">
+                                        <p>Segurança Informática</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/SDi.png" data-href="HTMLdeCadeiras/SDi.html">
+                                        <img src="Cadeiras/SDi.png">
+                                        <p>Sistemas Distribuídos</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/SE.png" data-href="HTMLdeCadeiras/SE.html">
+                                        <img src="Cadeiras/SE.png">
+                                        <p>Sistemas Embebidos</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/EGE.png" data-href="HTMLdeCadeiras/EGE.html">
+                                        <img src="Cadeiras/EGE.png">
+                                        <p>Empreendedorismo e Gestão de Empresas</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/ES2.png" data-href="HTMLdeCadeiras/ES2.html">
+                                        <img src="Cadeiras/ES2.png">
+                                        <p>Engenharia de Software II</p>
+                                    </div>
+
+                                    <div class="opcao" data-img="Cadeiras/IA.png" data-href="HTMLdeCadeiras/IA.html">
+                                        <img src="Cadeiras/IA.png">
+                                        <p>Inteligência Artificial</p>
+                                    </div>
+                                </div>
+                    </div>
+
+                    <div class="SlideShow" id="slideshowContainer"></div>
+                    <script src="testeSlideShowNovo.js"></script>
+
+                </article>
+
+            </div>
+            <br>
+            <a class="btn btn-Slideshow" onclick="mostrarSlides()">Mostrar slideshow</a>
+        </section>
+    </main>
+
         <section id="anos" class="container section-grid">
             <h2 class="section-title">Navegar por Ano</h2>
             
@@ -88,7 +269,7 @@
                         <p>Matemática Discreta, Programação I, Álgebra...</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="card-link">Ver 8 Cadeiras →</a>
+                        <a href="Cadeiras1Ano.html" class="card-link">Ver 8 Cadeiras →</a>
                     </div>
                 </article>
 
@@ -101,7 +282,7 @@
                         <p>Base de Dados, SO, Programação Orientada a Objetos...</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="card-link">Ver 8 Cadeiras →</a>
+                        <a href="Cadeiras2Ano.html" class="card-link">Ver 8 Cadeiras →</a>
                     </div>
                 </article>
 
@@ -114,7 +295,7 @@
                         <p>Inteligência Artificial, Aplicações Web, Redes...</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="card-link">Ver 8 Cadeiras →</a>
+                        <a href="Cadeiras3Ano.html" class="card-link">Ver 8 Cadeiras →</a>
                     </div>
                 </article>
             </div>

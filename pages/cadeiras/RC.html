@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes de Computadores | Resumos LEI-ESTGV</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+        <header class="main-header">
+        <div class="container header-content">
+            <a href="../../index.html" class="brand">
+                <span class="brand-text">Resumos <span class="highlight">LEI-ESTGV</span></span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Cadeiras ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../cadeiras-1ano.html">1º Ano</a></li>
+                            <li><a href="../cadeiras-2ano.html">2º Ano</a></li>
+                            <li><a href="../cadeiras-3ano.html">3º Ano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../comunidade.html">Comunidade</a></li>
+                    <li><a href="../../faq.html">FAQ</a></li>
+                    <li><a href="../../contactos.html">Contactos</a></li>
+                    <li class="mobile-only"><button class="theme-toggle" style="width: 100%; text-align: left; background: transparent; border: none; font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">Alterar Tema</button></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar..." id="search-input">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="clock-badge">
+                    <span id="time-display">--:--:--</span>
+                </div>
+                <button class="theme-toggle" title="Alternar tema">Tema</button>
+            </div>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+    <main class="container cadeira-detail">
+        <nav class="breadcrumb"><a href="../../index.html">Início</a> / <a href="../cadeiras-2ano.html">2º Ano</a> /
+            <span>Redes de Computadores</span></nav>
+        <header class="cadeira-header">
+            <div class="sigla-grande" style="background: linear-gradient(135deg, #EC4899, #BE185D);">RC</div>
+            <div>
+                <h1>Redes de Computadores</h1>
+                <p class="meta">2º Ano | 1º Semestre | 6 ECTS</p>
+            </div>
+        </header>
+        <section class="cadeira-section glass-card">
+            <h2> Resumo</h2>
+            <p>Esta cadeira explora como os computadores comunicam entre si. Desde o modelo OSI até protocolos como
+                TCP/IP, HTTP e DNS, aprenderás os fundamentos das redes que suportam a Internet.</p>
+        </section>
+        <section class="cadeira-section glass-card">
+            <h2> Objetivos de Aprendizagem</h2>
+            <ul class="objetivos-list">
+                <li>Compreender o modelo OSI e TCP/IP</li>
+                <li>Configurar endereçamento IP</li>
+                <li>Entender protocolos de rede comuns</li>
+                <li>Configurar redes básicas</li>
+            </ul>
+        </section>
+        <section class="cadeira-section glass-card">
+            <h2> Conteúdos Programáticos</h2>
+            <div class="topicos-accordion accordion">
+                <div class="item">
+                    <div class="header"><span>1. Modelos de Referência</span><span class="arrow">▼</span></div>
+                    <div class="content">
+                        <ul>
+                            <li>Modelo OSI (7 camadas)</li>
+                            <li>Modelo TCP/IP</li>
+                            <li>Encapsulamento</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="header"><span>2. Camada de Rede</span><span class="arrow">▼</span></div>
+                    <div class="content">
+                        <ul>
+                            <li>Endereçamento IPv4 e IPv6</li>
+                            <li>Subnetting</li>
+                            <li>Routing</li>
+                            <li>ICMP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="header"><span>3. Camada de Transporte</span><span class="arrow">▼</span></div>
+                    <div class="content">
+                        <ul>
+                            <li>TCP vs UDP</li>
+                            <li>Portas e sockets</li>
+                            <li>Controlo de fluxo e congestionamento</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="header"><span>4. Camada de Aplicação</span><span class="arrow">▼</span></div>
+                    <div class="content">
+                        <ul>
+                            <li>HTTP/HTTPS</li>
+                            <li>DNS</li>
+                            <li>DHCP</li>
+                            <li>FTP, SMTP, SSH</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cadeira-nav"
+            style="display: flex; justify-content: space-between; margin: 40px 0; flex-wrap: wrap; gap: 15px;">
+            <a href="BD1.html" class="btn btn-secondary">← Anterior: BD1</a>
+            <a href="AI2.html" class="btn btn-primary">Próxima: AI2 →</a>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2025 Resumos LEI ESTGV</p>
+    </footer>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

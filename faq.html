@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FAQ Resumos EI-ESTGV - Perguntas frequentes sobre o curso de Engenharia Informática e a plataforma">
+    <title>FAQ | Resumos LEI-ESTGV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-glow"></div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="brand">
+                <span class="brand-text">Resumos <span class="highlight">LEI-ESTGV</span></span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">Cadeiras ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/cadeiras-1ano.html">1º Ano</a></li>
+                            <li><a href="pages/cadeiras-2ano.html">2º Ano</a></li>
+                            <li><a href="pages/cadeiras-3ano.html">3º Ano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comunidade.html">Comunidade</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li class="mobile-only"><button class="theme-toggle"
+                            style="width: 100%; text-align: left; background: transparent; border: none; font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">Alterar
+                            Tema</button></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar..." id="search-input">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="clock-badge">
+                    <span id="time-display">--:--:--</span>
+                </div>
+                <button class="theme-toggle" title="Alternar tema">Tema</button>
+            </div>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Perguntas <span class="highlight">Frequentes</span></h1>
+        <p class="subtitle" style="padding-top: 0; margin-bottom: 40px;">
+            Tens dúvidas sobre a plataforma ou sobre o curso de Engenharia Informática? Encontra aqui as respostas às perguntas mais comuns.
+        </p>
+
+        <!-- FAQ: Sobre a Plataforma -->
+        <section class="community-section">
+            <h2>Sobre a Plataforma</h2>
+
+            <div class="accordion">
+                <div class="item">
+                    <div class="header">
+                        <span>O que é a plataforma Resumos LEI?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>A Resumos LEI é uma plataforma comunitária criada por estudantes de Engenharia Informática da
+                            ESTGV (Escola Superior de Tecnologia e Gestão de Viseu). O objetivo é centralizar resumos,
+                            material de estudo e recursos úteis para ajudar os alunos do curso a terem sucesso
+                            académico.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>Quem pode usar esta plataforma?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>A plataforma é aberta a todos! Embora tenha sido criada principalmente para estudantes de EI
+                            da ESTGV, qualquer pessoa interessada em consultar o material pode fazê-lo gratuitamente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>Como posso contribuir com os meus resumos?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>Podes contribuir de duas formas:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Através do formulário na página de <a href="contactos.html"
+                                    style="color: var(--primary-color);">Contactos</a></li>
+                            <li>Abrindo um Pull Request no nosso <a href="https://github.com/Louraes202/ProjetoAI"
+                                    target="_blank" style="color: var(--primary-color);">repositório GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>Os resumos estão atualizados?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>Fazemos o nosso melhor para manter o material atualizado, mas como é uma plataforma
+                            comunitária, alguns conteúdos podem estar desatualizados. Recomendamos sempre verificar com
+                            os materiais oficiais das cadeiras e contactar-nos se encontrares informação incorreta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ: Sobre o Curso -->
+        <section class="community-section">
+            <h2>Sobre o Curso de EI</h2>
+
+            <div class="accordion">
+                <div class="item">
+                    <div class="header">
+                        <span>Quantas cadeiras tem o curso?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>O curso de Engenharia Informática (EI) da ESTGV tem um total de
+                            aproximadamente 29 unidades curriculares distribuídas por 3 anos (6 semestres). Cada ano tem
+                            tipicamente 10 cadeiras, divididas entre os dois semestres.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>Quais são as cadeiras mais difíceis?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>A dificuldade é subjetiva e varia de pessoa para pessoa. No entanto, algumas cadeiras
+                            frequentemente mencionadas como desafiantes incluem:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>Análise Matemática</strong> - requer bases sólidas de matemática</li>
+                            <li><strong>Programação Orientada a Objetos</strong> - salto conceptual importante</li>
+                            <li><strong>Sistemas Operativos</strong> - conceitos de baixo nível</li>
+                            <li><strong>Bases de Dados</strong> - modelação e SQL podem ser complexos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>É preciso saber programar antes de entrar?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>Não! O curso começa do zero com cadeiras como <strong>Algoritmos e Programação</strong>. No
+                            entanto, ter alguma familiaridade com lógica e computadores pode ajudar. Se quiseres
+                            preparar-te, podes explorar recursos gratuitos online sobre lógica de programação.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>Qual linguagem de programação se usa mais?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>Ao longo do curso, vais trabalhar com várias linguagens:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>C</strong> - Cadeiras de programação como AP e POO</li>
+                            <li><strong>JavaScript/HTML/CSS</strong> - Aplicações para a Internet</li>
+                            <li><strong>SQL</strong> - Bases de Dados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ: Dicas de Estudo -->
+        <section class="community-section">
+            <h2>Dicas de Estudo</h2>
+
+            <div class="accordion">
+                <div class="item">
+                    <div class="header">
+                        <span>Como devo organizar o meu tempo de estudo?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>Recomendamos a técnica de <strong>estudo distribuído</strong>: estudar um pouco todos os dias
+                            é mais eficaz do que maratonas antes dos exames. Usa ferramentas como calendários ou apps de
+                            produtividade (Notion, Todoist) para planeares o teu semestre.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>Os resumos substituem ir às aulas?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>Não!</strong> Os resumos são um complemento, não um substituto. Ir às aulas
+                            permite-te tirar dúvidas em tempo real, perceber o que o professor considera importante, e
+                            muitas vezes os professores dão dicas sobre os exames.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>Devo fazer projetos fora das aulas?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>Sim, sem dúvida!</strong> Projetos pessoais são a melhor forma de consolidar
+                            conhecimento e de teres algo para mostrar no teu CV. Começa pequeno - uma calculadora, um
+                            to-do list, um site pessoal - e vai aumentando a complexidade.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="header">
+                        <span>Onde posso encontrar mais recursos de estudo?</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="content">
+                        <p>Para além desta plataforma, recomendamos:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>YouTube</strong> - canais como Curso em Vídeo, freeCodeCamp</li>
+                            <li><strong>Stack Overflow</strong> - para dúvidas de programação</li>
+                            <li><strong>MDN Web Docs</strong> - documentação web excelente</li>
+                            <li><strong>GeeksforGeeks</strong> - algoritmos e estruturas de dados</li>
+                            <li><strong>LeetCode/HackerRank</strong> - prática de programação</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="community-section" style="text-align: center; padding: 40px 0;">
+            <h2 style="border: none; text-align: center; padding-left: 0;">Não encontraste a tua resposta?</h2>
+            <p
+                style="color: var(--text-muted); margin-bottom: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
+                Envia-nos a tua pergunta e teremos todo o gosto em ajudar!
+            </p>
+            <a href="contactos.html" class="btn btn-primary">Contactar</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Resumos LEI ESTGV | Projeto de Aplicações para a Internet I</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Feito com dedicação por alunos para alunos</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

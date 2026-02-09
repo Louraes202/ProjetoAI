@@ -1,26 +1,447 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumos LEI - ESTGV</title>
+    <meta name="description"
+        content="Resumos LEI-ESTGV - Plataforma comunitária de resumos e material de estudo para estudantes de Engenharia Informática da ESTGV">
+    <title>Resumos LEI - ESTGV | Início</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="site-wrapper">
+    <div class="bg-glow"></div>
 
-        <header class="main-header">
-            <div class="logo-area">
-                <a href="index.html">Resumos LEI</a>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="brand">
+                <span class="brand-text">Resumos <span class="highlight">LEI-ESTGV</span></span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Cadeiras</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/cadeiras-1ano.html">1 Ano</a></li>
+                            <li><a href="pages/cadeiras-2ano.html">2 Ano</a></li>
+                            <li><a href="pages/cadeiras-3ano.html">3 Ano</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comunidade.html">Comunidade</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li class="mobile-only"><button class="theme-toggle"
+                            style="width: 100%; text-align: left; background: transparent; border: none; font-size: 0.95rem; color: var(--text-muted); font-weight: 500;">Alterar
+                            Tema</button></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar..." id="search-input">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="clock-badge">
+                    <span id="time-display">--:--:--</span>
+                </div>
+                <button class="theme-toggle" title="Alternar tema">Tema</button>
+                <a href="https://github.com/Louraes202/ProjetoAI" target="_blank" class="github-link">GitHub</a>
             </div>
-        </header>
-        <footer>
-            <p>&copy; 2025 Resumos LEI ESTGV. Feito por alunos para alunos.</p>
-        </footer>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
 
-    </div>
+    <main class="container">
+        <!-- Hero Slider -->
+        <section class="hero-slider">
 
-    <script src="js/main.js"></script> <script src="js/slider.js"></script> </body>
+            <!-- Slide 1: Principal -->
+            <div class="slide active">
+                <div class="hero-content">
+                    <div class="logo-large">
+                        <div class="icon-box orange"></div>
+                        <h1>Resumos de <span class="highlight" style="color: #F59E0B;">EI</span></h1>
+                    </div>
+                    <p class="subtitle">A plataforma comunitaria de Engenharia Informatica na ESTGV. Feita por alunos,
+                        para alunos.</p>
+                    <div class="cta-group">
+                        <a href="#anos" class="btn btn-orange">Comecar a Estudar</a>
+                        <a href="comunidade.html" class="btn btn-secondary">Juntar a Comunidade</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Material Atualizado -->
+            <div class="slide">
+                <div class="hero-content">
+                    <div class="logo-large">
+                        <div class="icon-box blue"></div>
+                        <h1>Material <span class="highlight" style="color: #3B82F6;">Atualizado</span></h1>
+                    </div>
+                    <p class="subtitle">Resumos revistos e atualizados para o ano letivo 2025/2026. Tudo o que precisas
+                        para os teus exames.</p>
+                    <div class="cta-group">
+                        <a href="pages/cadeiras-2ano.html" class="btn btn-blue">Ver
+                            Cadeiras do 2 Ano</a>
+                        <a href="#slideshow" class="btn btn-secondary">Escolher Cadeiras</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Comunidade -->
+            <div class="slide">
+                <div class="hero-content">
+                    <div class="logo-large">
+                        <div class="icon-box green"></div>
+                        <h1>Comunidade <span class="highlight" style="color: #10B981;">Ativa</span></h1>
+                    </div>
+                    <p class="subtitle">Partilha resumos, troca ideias e ajuda os teus colegas. Juntos vamos mais longe!
+                    </p>
+                    <div class="cta-group">
+                        <a href="comunidade.html" class="btn btn-green">Conhecer a
+                            Comunidade</a>
+                        <a href="contactos.html" class="btn btn-secondary">Contribuir</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- Navegação por Anos -->
+        <section id="anos" class="container section-grid">
+            <h2 class="section-title">Navegar por Ano</h2>
+
+            <div class="years-grid">
+                <article class="card glass-card">
+                    <div class="card-header">
+                        <span class="year-num">01</span>
+                        <h3>Primeiro Ano</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Análise Matemática, Álgebra, Sistemas Digitais, Algoritmos e Programação, Estruturas de
+                            Dados...</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="pages/cadeiras-1ano.html" class="card-link">Ver 10 Cadeiras →</a>
+                    </div>
+                </article>
+
+                <article class="card glass-card">
+                    <div class="card-header">
+                        <span class="year-num">02</span>
+                        <h3>Segundo Ano</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Aplicações para a Internet, Bases de Dados, Programação Orientada a Objetos, Sistemas
+                            Operativos...</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="pages/cadeiras-2ano.html" class="card-link">Ver 10 Cadeiras →</a>
+                    </div>
+                </article>
+
+                <article class="card glass-card">
+                    <div class="card-header">
+                        <span class="year-num">03</span>
+                        <h3>Terceiro Ano</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Inteligência Artificial, Segurança Informática, Sistemas Distribuídos, Engenharia de
+                            Software...</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="pages/cadeiras-3ano.html" class="card-link">Ver 9 Cadeiras →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Secção de Seleção de Cadeiras -->
+        <section id="slideshow" class="container section-grid">
+            <h2 class="section-title">As tuas cadeiras</h2>
+
+            <div class="years-grid">
+                <article class="card glass-card">
+
+                    <div id="zonaEscolhas">
+                        <p style="margin-bottom: 20px; color: var(--text-muted);">Escolhe 3 cadeiras para criar o teu
+                            slideshow personalizado com atalhos para as cadeiras que mais precisas:</p>
+
+                        <div class="tabs">
+                            <button class="tablink active" onclick="abrirTab(event, '1anoOpcoes')">1º Ano</button>
+                            <button class="tablink" onclick="abrirTab(event, '2anoOpcoes')">2º Ano</button>
+                            <button class="tablink" onclick="abrirTab(event, '3anoOpcoes')">3º Ano</button>
+                        </div>
+
+                        <!-- Cadeiras 1º Ano -->
+                        <div id="1anoOpcoes" class="opcoes" style="display: flex;">
+                            <div class="opcao" data-img="assets/images/cadeiras/AM.png"
+                                data-href="pages/cadeiras/AM.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #3B82F6, #6D28D9); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    AM</div>
+                                <p>Análise Matemática</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/AL.png"
+                                data-href="pages/cadeiras/AL.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #3B82F6, #6D28D9); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    AL</div>
+                                <p>Álgebra</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/SD.png"
+                                data-href="pages/cadeiras/SD.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #3B82F6, #6D28D9); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    SD</div>
+                                <p>Sistemas Digitais</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/AP.png"
+                                data-href="pages/cadeiras/AP.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #3B82F6, #6D28D9); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    AP</div>
+                                <p>Algoritmos e Programação</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/TC.png"
+                                data-href="pages/cadeiras/TC.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #3B82F6, #6D28D9); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    TC</div>
+                                <p>Tecnologias dos Computadores</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/AC.png"
+                                data-href="pages/cadeiras/AC.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #8B5CF6, #1D4ED8); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    AC</div>
+                                <p>Arquitetura de Computador</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/MD.png"
+                                data-href="pages/cadeiras/MD.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #8B5CF6, #1D4ED8); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    MD</div>
+                                <p>Matemática Discreta</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/MA.png"
+                                data-href="pages/cadeiras/MA.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #8B5CF6, #1D4ED8); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    MA</div>
+                                <p>Matemática Aplicada</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/R1.png"
+                                data-href="pages/cadeiras/R1.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #8B5CF6, #1D4ED8); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    R1</div>
+                                <p>Redes de Comunicação I</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/ED.png"
+                                data-href="pages/cadeiras/ED.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #8B5CF6, #1D4ED8); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    ED</div>
+                                <p>Estruturas de Dados</p>
+                            </div>
+                        </div>
+
+                        <!-- Cadeiras 2º Ano -->
+                        <div id="2anoOpcoes" class="opcoes" style="display: none;">
+                            <div class="opcao" data-img="assets/images/cadeiras/POO.png"
+                                data-href="pages/cadeiras/POO.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #EC4899, #D97706); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    POO</div>
+                                <p>Prog. Orientada Objetos</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/AS.png"
+                                data-href="pages/cadeiras/AS.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #EC4899, #D97706); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    AS</div>
+                                <p>Análise de Sistemas</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/SO.png"
+                                data-href="pages/cadeiras/SO.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #EC4899, #D97706); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    SO</div>
+                                <p>Sistemas Operativos</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/AI1.png"
+                                data-href="pages/cadeiras/AI1.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #EC4899, #D97706); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    AI1</div>
+                                <p>Aplicações Internet I</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/U.png"
+                                data-href="pages/cadeiras/U.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #EC4899, #D97706); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    U</div>
+                                <p>Usabilidade</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/ES1.png"
+                                data-href="pages/cadeiras/ES1.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #F59E0B, #BE185D); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    ES1</div>
+                                <p>Eng. Software I</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/BD1.png"
+                                data-href="pages/cadeiras/BD1.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #F59E0B, #BE185D); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    BD1</div>
+                                <p>Bases de Dados I</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/AI2.png"
+                                data-href="pages/cadeiras/AI2.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #F59E0B, #BE185D); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    AI2</div>
+                                <p>Aplicações Internet II</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/R2.png"
+                                data-href="pages/cadeiras/R2.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #F59E0B, #BE185D); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    R2</div>
+                                <p>Redes Comunicação II</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/PDM.png"
+                                data-href="pages/cadeiras/PDM.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #F59E0B, #BE185D); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    PDM</div>
+                                <p>Prog. Disp. Móveis</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/PI.png"
+                                data-href="pages/cadeiras/PI.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #F59E0B, #D97706); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    PI</div>
+                                <p>Projeto Integrado</p>
+                            </div>
+                        </div>
+
+                        <!-- Cadeiras 3º Ano -->
+                        <div id="3anoOpcoes" class="opcoes" style="display: none;">
+                            <div class="opcao" data-img="assets/images/cadeiras/SI.png"
+                                data-href="pages/cadeiras/SI.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #cee21e, #059669); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    SI</div>
+                                <p>Segurança Informática</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/R3.png"
+                                data-href="pages/cadeiras/R3.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #cee21e, #059669); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    R3</div>
+                                <p>Redes Comunicação III</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/CSO.png"
+                                data-href="pages/cadeiras/CSO.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #cee21e, #059669); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    CSO</div>
+                                <p>Compl. Sist. Operativos</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/BD2.png"
+                                data-href="pages/cadeiras/BD2.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #cee21e, #059669); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    BD2</div>
+                                <p>Bases de Dados II</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/SE.png"
+                                data-href="pages/cadeiras/SE.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #cee21e, #059669); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    SE</div>
+                                <p>Sistemas Embebidos</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/SDi.png"
+                                data-href="pages/cadeiras/SDi.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #cee21e, #059669); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    SDi</div>
+                                <p>Sistemas Distribuídos</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/IA.png"
+                                data-href="pages/cadeiras/IA.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #10B981, #d8b51b); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    IA</div>
+                                <p>Inteligência Artificial</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/ES2.png"
+                                data-href="pages/cadeiras/ES2.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #10B981, #d8b51b); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    ES2</div>
+                                <p>Eng. Software II</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/EGE.png"
+                                data-href="pages/cadeiras/EGE.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #10B981, #d8b51b); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    EGE</div>
+                                <p>Empreendedorismo</p>
+                            </div>
+                            <div class="opcao" data-img="assets/images/cadeiras/Proj.png"
+                                data-href="pages/cadeiras/Proj.html">
+                                <div
+                                    style="height: 80px; width: 80%; background: linear-gradient(135deg, #10B981, #059669); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: bold;">
+                                    Proj</div>
+                                <p>Projeto</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="SlideShow" id="slideshowContainer"></div>
+
+                </article>
+            </div>
+            <br>
+            <a class="btn btn-Slideshow" onclick="mostrarSlides()">Mostrar slideshow</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Resumos LEI ESTGV | Projeto de Aplicações para a Internet I</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Feito com ❤️ por alunos para alunos</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
 </html>

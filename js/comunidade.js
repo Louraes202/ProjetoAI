@@ -15,21 +15,21 @@
     // ============================================
 
     const frases = [
-        "O sucesso é a soma de pequenos esforços repetidos dia após dia. 💪",
-        "Estudar é plantar sementes de conhecimento que darás os melhores frutos. 🌱",
-        "Não desistas! Cada exame difícil é uma oportunidade de crescimento. 📚",
-        "A prática leva à perfeição. Continue a resolver exercícios! 🎯",
-        "Juntos somos mais fortes. Partilha os teus resumos com a comunidade! 🤝",
-        "O código que hoje parece impossível, amanhã será trivial. 💻",
-        "Errar faz parte do processo. Cada bug resolvido é uma lição aprendida. 🐛",
-        "A curiosidade é o combustível da inovação. Nunca pares de perguntar 'porquê?'. 🔍",
-        "Grandes projetos começam com uma linha de código. Dá o primeiro passo! 🚀",
-        "O melhor momento para começar a estudar era ontem. O segundo melhor é agora. ⏰",
-        "Debugging é como ser um detetive num filme de crime onde tu és o assassino. 🕵️",
-        "Não tenhas medo de pedir ajuda. Os melhores programadores colaboram! 🙋",
-        "Celebra cada pequena vitória. Passar num teste é uma conquista! 🎉",
-        "A consistência supera a intensidade. Estuda um pouco todos os dias. 📅",
-        "O conhecimento partilhado multiplica-se. Ensina o que aprendeste! 🎓"
+        "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+        "Estudar é plantar sementes de conhecimento que darás os melhores frutos.",
+        "Não desistas! Cada exame difícil é uma oportunidade de crescimento.",
+        "A prática leva à perfeição. Continue a resolver exercícios!",
+        "Juntos somos mais fortes. Partilha os teus resumos com a comunidade!",
+        "O código que hoje parece impossível, amanhã será trivial.",
+        "Errar faz parte do processo. Cada bug resolvido é uma lição aprendida.",
+        "A curiosidade é o combustível da inovação. Nunca pares de perguntar 'porquê?'.",
+        "Grandes projetos começam com uma linha de código. Dá o primeiro passo!",
+        "O melhor momento para começar a estudar era ontem. O segundo melhor é agora.",
+        "Debugging é como ser um detetive num filme de crime onde tu és o assassino.",
+        "Não tenhas medo de pedir ajuda. Os melhores programadores colaboram!",
+        "Celebra cada pequena vitória. Passar num teste é uma conquista!",
+        "A consistência supera a intensidade. Estuda um pouco todos os dias.",
+        "O conhecimento partilhado multiplica-se. Ensina o que aprendeste!"
     ];
 
     // ============================================

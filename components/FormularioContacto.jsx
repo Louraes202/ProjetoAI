@@ -152,10 +152,10 @@ function FormularioContacto() {
             // Guardar no localStorage
             localStorage.setItem('formulario_contactos', JSON.stringify(submissoes));
 
-            console.log('✅ Dados guardados no localStorage:', novaSubmissao);
+            console.log('Dados guardados no localStorage:', novaSubmissao);
             return true;
         } catch (error) {
-            console.error('❌ Erro ao guardar no localStorage:', error);
+            console.error('Erro ao guardar no localStorage:', error);
             return false;
         }
     }
@@ -207,7 +207,7 @@ function FormularioContacto() {
     return (
         <form onSubmit={handleSubmit}>
             <h2 style={{ marginBottom: '25px', fontSize: '1.5rem' }}>
-                📝 Formulário de Contacto
+                - - Formulário de Contacto - -
             </h2>
 
             {/* Campo Nome */}
@@ -298,7 +298,7 @@ function FormularioContacto() {
 
             {/* Botão Enviar */}
             <button type="submit" disabled={aEnviar}>
-                {aEnviar ? '⏳ A enviar...' : '📤 Enviar Mensagem'}
+                {aEnviar ? ' A enviar...' : ' Enviar Mensagem'}
             </button>
 
             {/* Mensagem de Sucesso */}

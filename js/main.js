@@ -237,6 +237,7 @@
          const yearNum = document.querySelectorAll('.year-num');
          const glow = document.querySelectorAll('.bg-glow');
          const dots = document.querySelectorAll('.dot');
+         const form = document.getElementById('react-form');
 
     // alternar tema no body
           const isLightMode = body.classList.toggle('light-mode');
@@ -258,6 +259,10 @@
             card.classList.toggle('light-mode', isLightMode);
         }); 
 
+        if (form) {
+            form.classList.toggle('light-mode', isLightMode);
+        } 
+
     // guardar preferência
         localStorage.setItem('tema', isLightMode ? 'light' : 'dark');
 
@@ -272,16 +277,43 @@
      * Carrega a preferencia de tema guardada
      */
     function carregarTema() {
-        const temaSalvo = localStorage.getItem('tema');
-        
-        if (temaSalvo === 'light') {
-            document.body.classList.add('light-mode');
-            const themeBtn = document.querySelector('.theme-toggle');
-            if (themeBtn) {
-                themeBtn.textContent = 'Escuro';
-            }
-        }
-    }
+    const temaSalvo = localStorage.getItem('tema');
+    const isLightMode = temaSalvo === 'light';
+
+    const body = document.body;
+    const glassCards = document.querySelectorAll('.glass-card');
+    const yearNum = document.querySelectorAll('.year-num');
+    const glow = document.querySelectorAll('.bg-glow');
+    const dots = document.querySelectorAll('.dot');
+    const themeBtns = document.querySelectorAll('.theme-toggle');
+    const form = document.getElementById('react-form');
+
+    body.classList.toggle('light-mode', isLightMode);
+
+    glassCards.forEach(card =>
+        card.classList.toggle('light-mode', isLightMode)
+    );
+
+    yearNum.forEach(card =>
+        card.classList.toggle('light-mode', isLightMode)
+    );
+
+    glow.forEach(card =>
+        card.classList.toggle('light-mode', isLightMode)
+    );
+
+    dots.forEach(card =>
+        card.classList.toggle('light-mode', isLightMode)
+    );
+
+    themeBtns.forEach(btn => {
+        btn.textContent = isLightMode ? 'Escuro' : 'Claro';
+    });
+
+    if (form) {
+        form.classList.toggle('light-mode', isLightMode);
+    } 
+}
 
     /**
      * Inicializa o toggle de tema
@@ -414,14 +446,17 @@
      * Inicializa todos os modulos quando o DOM esta pronto
      */
     function init() {
+        // Tema
+        carregarTema();
+
+        // Iniciar toggle de tema
+        iniciarToggleTema();
+
         // Iniciar relogio em tempo real
         iniciarRelogio();
         
         // Iniciar sistema de pesquisa
         iniciarPesquisa();
-        
-        // Iniciar toggle de tema
-        iniciarToggleTema();
         
         // Iniciar acordeoes
         iniciarAccordion();
